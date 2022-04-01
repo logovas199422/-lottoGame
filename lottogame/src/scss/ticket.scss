@@ -1,0 +1,39 @@
+@import "./src/scss/variables";
+
+.ticket{
+  min-height: 368px;
+  background: $ticket-background-color;
+  margin: 17px 12px;
+  font-family: $main-font;
+  border-radius: 5px;
+  padding-bottom: 24px;
+  .ticket__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    .ticket__header{
+      font-weight: 400;
+      font-size: $font-size-middle;
+    }
+  }
+  .ticket__button{
+    display: block;
+    font-size: $font-size-small;
+    font-weight: 400;
+    padding: 13px 26px;
+    background: $ticket-button-background-color;
+    border: 1px solid $ticket-button-border-color;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 24px auto 0 auto;
+    &:hover{
+      background: $field-item-active-color;
+      transition-duration: .4s;
+    }
+  }
+  svg{
+    cursor: pointer;
+  }
+}

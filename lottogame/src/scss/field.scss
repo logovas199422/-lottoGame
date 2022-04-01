@@ -1,0 +1,32 @@
+@import "./src/scss/variables";
+
+.field{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .field__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 14px 16px;
+    .field__header{
+      font-size: $font-size-small;
+      font-weight: 400;
+    }
+    .field__info{
+      margin-left: 8px;
+      font-size: $font-size-small;
+      font-weight: 300;
+    }
+  }
+  .field__item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 11px;
+  }
+}

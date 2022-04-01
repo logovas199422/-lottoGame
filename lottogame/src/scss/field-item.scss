@@ -1,0 +1,21 @@
+@import "./src/scss/variables";
+.field__item{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid $field-item-border-color;
+  font-size: $font-size-small;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.field__item--active{
+  background: $field-item-active-color;
+  border: none;
+  width: 34px;
+  height: 34px;
+  margin: 4px;
+}
