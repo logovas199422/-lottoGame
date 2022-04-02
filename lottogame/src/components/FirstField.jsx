@@ -1,7 +1,7 @@
 import React from "react";
 import FirstFieldItem from "./FirstFieldItem";
 
-export default function FirstField({fieldHeader,fieldInfo,firstFieldItemCount,onSelectFirstFieldItem,firstFieldSelectedNumbers}) {
+export default function FirstField({fieldHeader, fieldInfo, firstFieldItemCount, onSelectFirstFieldItem, firstFieldSelectedNumbers}) {
 
     return (
         <div className="field">
@@ -13,7 +13,7 @@ export default function FirstField({fieldHeader,fieldInfo,firstFieldItemCount,on
                 {fieldInfo}
                 </span>
             </div>
-            <div  className="field__item-container">
+            <div className="field__item-container">
                 {firstFieldItemCount.map((count, idx) => <FirstFieldItem key={idx} count={count}
                                                                          onSelectFirstFieldItem={onSelectFirstFieldItem}
                                                                          isActive={firstFieldSelectedNumbers.includes(count)}/>)}

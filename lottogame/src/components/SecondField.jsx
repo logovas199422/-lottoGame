@@ -1,7 +1,7 @@
 import React from "react";
 import SecondFieldItem from "./SecondFieldItem";
 
-export default function SecondField({fieldHeader,fieldInfo,secondFieldItemCount,onSelectSecondFieldItem,secondFieldSelectedNumbers}) {
+export default function SecondField({fieldHeader, fieldInfo, secondFieldItemCount, onSelectSecondFieldItem, secondFieldSelectedNumbers}) {
 
     return (
         <div className="field">
@@ -13,7 +13,7 @@ export default function SecondField({fieldHeader,fieldInfo,secondFieldItemCount,
                 {fieldInfo}
                 </span>
             </div>
-            <div  className="field__item-container">
+            <div className="field__item-container">
                 {secondFieldItemCount.map((count, idx) => <SecondFieldItem key={idx} count={count}
                                                                            onSelectSecondFieldItem={onSelectSecondFieldItem}
                                                                            isActive={secondFieldSelectedNumbers.includes(count)}/>)}

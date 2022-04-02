@@ -69,7 +69,7 @@ export default function Ticket() {
     }
 
     function matchedNumbers(fieldWinningNumbers, selectedNumbers) {
-         return fieldWinningNumbers.filter(x => selectedNumbers.includes(x));
+        return fieldWinningNumbers.filter(x => selectedNumbers.includes(x));
     }
 
     const onSelectFirstFieldItem = (evt) => {
@@ -100,7 +100,7 @@ export default function Ticket() {
                     + secondFieldWinningNumbers + "\nСовпавшие числа первого поля " + firstFieldMatchedNumbers + "\nСовпавшие числа второго поля " + secondFieldMatchedNumbers);
             } else {
                 alert("Ты проиграл." + " \nВыигрышные числа первого поля " + firstFieldWinningNumbers + " \nВыигрышные числа второго поля "
-                    + secondFieldWinningNumbers + " . \nСовпавшие числа первого поля " + firstFieldMatchedNumbers + "\nСовпавшие числа второго поля " + secondFieldMatchedNumbers);
+                    + secondFieldWinningNumbers + "\nСовпавшие числа первого поля " + firstFieldMatchedNumbers + "\nСовпавшие числа второго поля " + secondFieldMatchedNumbers);
             }
 
             let body = {
