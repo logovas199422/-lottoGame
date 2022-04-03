@@ -93,13 +93,13 @@ export default function Ticket() {
         if (firstFieldSelectedNumbers.length == 8 && secondFieldSelectedNumbers.length == 1) {
             firstFieldMatchedNumbers = matchedNumbers(firstFieldWinningNumbers, firstFieldSelectedNumbers)
             secondFieldMatchedNumbers = matchedNumbers(secondFieldWinningNumbers, secondFieldSelectedNumbers)
-            if (firstFieldMatchedNumbers.length >= 3 && secondFieldMatchedNumbers.length > 0) {
+            if (firstFieldMatchedNumbers.length >= 4 || (firstFieldMatchedNumbers.length >= 3 && secondFieldMatchedNumbers.length > 0)) {
                 isTicketWon = true
                 alert("Ты победил и получаешь причитающиеся тебе лавры (ничего не получаешь)" +
                     " \nВыигрышные числа первого поля " + firstFieldWinningNumbers + " \nВыигрышные числа второго поля "
                     + secondFieldWinningNumbers + "\nСовпавшие числа первого поля " + firstFieldMatchedNumbers + "\nСовпавшие числа второго поля " + secondFieldMatchedNumbers);
             } else {
-                alert("Ты проиграл." + " \nВыигрышные числа первого поля " + firstFieldWinningNumbers + " \nВыигрышные числа второго поля "
+                alert("Ты проиграл. \nВыигрышные числа первого поля " + firstFieldWinningNumbers + " \nВыигрышные числа второго поля "
                     + secondFieldWinningNumbers + "\nСовпавшие числа первого поля " + firstFieldMatchedNumbers + "\nСовпавшие числа второго поля " + secondFieldMatchedNumbers);
             }
 
